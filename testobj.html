@@ -12,6 +12,9 @@ OBJECTS METHODS....
 
 OBJECTS CONTRUCTORS....
 <p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
 <script>
     function fru(nm,shape,color)
     {
@@ -38,6 +41,44 @@ OBJECTS CONTRUCTORS....
    // document.getElementById("demo1").innerHTML="color of fruits is  " + apple.color;
     //document.getElementById("demo1").innerHTML=apple.desc();
     document.getElementById("demo1").innerHTML="shape of mango is  "+ mango.shape + "  and price is  "+ mango.price;
+
+    (function () {
+    document.getElementById("demo2").innerHTML = "Hello! I called myself";
+    })();
+
+    function sumof(){
+    var i;
+    var s=0;
+    for(i=0;i<arguments.length;i++)
+    {
+        s+=arguments[i];
+    }
+
+    return s;
+
+}
+document.getElementById("demo3").innerHTML="Sum of all arguments "+
+sumof(1,3,5);
+
+//function call...........................
+
+var person = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+var myObject = {
+    firstName:"Mary",
+    lastName: "Doe",
+}
+x = person.fullName.call(myObject); 
+document.getElementById("demo4").innerHTML = "call "+x; 
+
 </script>
+
+
+
 </body>
 </html>
