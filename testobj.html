@@ -29,13 +29,15 @@ OBJECTS CONTRUCTORS....
             };
         
     }
+    //adding new property
+    fru.prototype. price=50;
 
     var apple=new fru("apple","round","red");
     var mango=new fru("mango","oval","yellow");
     mango.changeshape("round");
    // document.getElementById("demo1").innerHTML="color of fruits is  " + apple.color;
     //document.getElementById("demo1").innerHTML=apple.desc();
-    document.getElementById("demo1").innerHTML="shape of mango is  "+ mango.shape;
+    document.getElementById("demo1").innerHTML="shape of mango is  "+ mango.shape + "  and price is  "+ mango.price;
 </script>
 </body>
 </html>
