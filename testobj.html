@@ -5,8 +5,37 @@
 </head>
 
 <body>
-<button onclick="fun1()">Click Me</button>
+OBJECTS METHODS....
 <p id="demo"></p>
+
+<button onclick="fun1()">Click Me</button>
+
+OBJECTS CONTRUCTORS....
 <p id="demo1"></p>
+<script>
+    function fru(nm,shape,color)
+    {
+            this.nm=nm;
+            this.shape=shape;
+            this.color=color;
+            //adding method to contructor
+            this.desc =function(){
+                return "shape is  "+this.shape;
+
+            };
+            //changing value
+            this.changeshape=function(nm){
+                this.shape=nm;
+            };
+        
+    }
+
+    var apple=new fru("apple","round","red");
+    var mango=new fru("mango","oval","yellow");
+    mango.changeshape("round");
+   // document.getElementById("demo1").innerHTML="color of fruits is  " + apple.color;
+    //document.getElementById("demo1").innerHTML=apple.desc();
+    document.getElementById("demo1").innerHTML="shape of mango is  "+ mango.shape;
+</script>
 </body>
 </html>

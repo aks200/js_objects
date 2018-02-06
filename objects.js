@@ -6,9 +6,9 @@ function fun1(){
                 Address:"Ahmedabad",
 
             
-             /*fullnm:function(){
+             fullnm:function(){
                 return this.firstname+this.lastname;
-            }*/
+            }
                 
             };
             person.fullnm = function(){
@@ -16,6 +16,9 @@ function fun1(){
             }
 
    
-    //document.getElementById("demo").innerHTML=person.fullnm();
+    //document.getElementById("demo1").innerHTML=person.fullnm();
     document.getElementById("demo").innerHTML=" Age is " + person.fullnm();
 }
+
+
+
